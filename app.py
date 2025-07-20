@@ -154,7 +154,7 @@ with st.sidebar:
             updatemenus=[{
                 "type": "buttons",
                 "buttons": [{
-                    "label": "Click to check accuracy",
+                    "label": "Click",
                     "method": "animate",
                     "args": [None, {"frame": {"duration": 80, "redraw": True}}],
                 }],
