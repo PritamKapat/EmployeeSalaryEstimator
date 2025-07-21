@@ -49,7 +49,7 @@ results = {
 }
 st.info("You can change model from the sidebar")
 
-st.title("💼 Compensation Prediction for Employees")
+st.title("🤖 Salary Estimator for Employees")
 
 # Sidebar model selection
 st.sidebar.header("Settings")
@@ -133,7 +133,7 @@ with st.sidebar:
             )],
             layout=go.Layout(
                 yaxis=dict(range=[0.8, 1.0]),
-                title='Accuracy Scores'
+                title='R² Scores'
             )
         )
 
@@ -160,10 +160,10 @@ with st.sidebar:
                 }],
                 "x": 0.3,
                 "y": -0.2,
-                "font": {"color": "black"},     # ✅ set text color here
-                "bgcolor": "black",             # optional: button background
-                "bordercolor": "gray",          # optional: border color
-                "showactive": True              # optional: highlight selected
+                "font": {"color": "black"},    
+                "bgcolor": "black",            
+                "bordercolor": "gray",          
+                "showactive": True              
             }],
             modebar=dict(remove=['zoom', 'pan', 'select', 'zoomIn', 'zoomOut', 'autoScale', 'resetScale', 'lasso2d'])
         )
